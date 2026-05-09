@@ -2,11 +2,15 @@
 console.log("connected");
 
 const title = document.getElementById("title");
-console.log(title);
-
-title.innerText = "반갑습니다.";
-
 const btn = document.getElementById("btn");
+
 btn.addEventListener("click", () => {
-    console.log("버튼이 클릭되었습니다.");
+    title.innerText = "변경";
+});
+
+const inputValue = document.getElementById("inputName");
+const outbutBtn = document.getElementById("outputBtn");
+
+outputBtn.addEventListener("click", () => {
+    console.log(inputValue.value);
 });
